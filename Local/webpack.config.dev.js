@@ -11,6 +11,9 @@ module.exports = {
         ],
         meeting: [
             './js/meeting.js'
+        ],
+        process: [
+            './js/process.js'
         ]
     },
     output: {
