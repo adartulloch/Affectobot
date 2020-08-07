@@ -40,7 +40,15 @@
         z-index: 9999;
         position: absolute;
         bottom: 75px;
-        left: 20px;
+        left: 10px;
+    }
+
+    .affectobot-callout {
+        z-index: 9999;
+        position: absolute;
+        bottom: 150px;
+        left: 170px;
+        display: none;
     }
 </style>
 
@@ -50,6 +58,13 @@
     <div class="emotions" id="emotionDisplay"></div>
     <div class="affectobot">
         <img src="./affectobot/affectobot.png" style="width: 50%">
+    </div>
+    <div class="affectobot-callout" id="lookAtCamera">
+        <img src="./affectobot/eyecontact.png" style="width: 70%">
+    </div>
+
+    <div class="affectobot-callout" id="lookAtCamera">
+        <img src="./affectobot/eyecontact.png" style="width: 70%">
     </div>
     <div class="col-md-8" id="affdex_elements" style="width:680px;height:480px;"></div>
     <script src="node_modules/react/umd/react.production.min.js"></script>

@@ -1,6 +1,4 @@
-/Local/node_modules
-/CDN/node_modules
-/Local/package-lock.json
-/Local/yarn.lock
-/CDN/yarn.lock
-/Local/.vscode
+/SpeakerView/Local/node_modules
+/SpeakerView/Local/package-lock.json
+/SpeakerView/Local/yarn.lock
+/SpeakerView/Local/.vscode
