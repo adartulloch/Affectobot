@@ -139,10 +139,6 @@ detector.addEventListener("onImageResultsSuccess", function (
       //   wink: 0,
       // });
       // console.log(summedEmojis)
-
-      
-      $("#emotionDisplay").html(mostFrequent(emojiArray));
-      emojiArray = []
     }
   }
   setTimeout(detector.captureNextImage, 150);

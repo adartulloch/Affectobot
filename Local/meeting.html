@@ -42,14 +42,91 @@
         bottom: 75px;
         left: 20px;
     }
+    .engagement {
+        z-index: 9999;
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+    }
+    .chart {
+        z-index: 9999;
+        position: absolute;
+        bottom: 380px;
+        left: -100px;
+    }
+    .emoji-1 {
+        z-index: 9999;
+        transition: transform .2s;
+        position: absolute;
+        bottom: 50px;
+        left: 1100px;
+    }
+    .emoji-2 {
+        z-index: 9999;
+        transition: transform .2s;
+        position: absolute;
+        bottom: 50px;
+        left: 1175px;
+    }
+    .emoji-3 {
+        z-index: 9999;
+        position: absolute;
+        transition: transform .2s;
+        bottom: 50px;
+        left: 1250px;
+    }
+    .emoji-4 {
+        z-index: 9999;
+        position: absolute;
+        bottom: 50px;
+        transition: transform .2s;
+        left: 1325px;
+    }
+    .emoji-1:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);
+    }
+    .emoji-2:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);
+    }
+    .emoji-3:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);
+    }
+    .emoji-4:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);
+    }
 </style>
-
 <body>
 
     <div class="title">:) Affectiva Emotion AI Summit 2020</div>
     <div class="emotions" id="emotionDisplay"></div>
     <div class="affectobot">
         <img src="./affectobot/affectobot.png" style="width: 50%">
+    </div>
+    <div class="reaction">
+        <img src="./affectobot/affectobot.png" style="width: 50%">
+    </div>
+    <div class="chart">
+        <img src="./emojis/engagement.png" style="width: 50%">
+    </div>
+    <div class="emoji-1">
+        <img src="./emojis/heart_eye_emoji.png" style="width: 50%">
+    </div>
+    <div class="emoji-2">
+        <img src="./emojis/laugh_emoji.png" style="width: 50%">
+    </div>
+    <div class="emoji-3">
+        <img src="./emojis/thinking_emoji.png" style="width: 50%">
+    </div>
+    <div class="emoji-4">
+        <img src="./emojis/tired_emoji.png" style="width: 50%">
     </div>
     <div class="col-md-8" id="affdex_elements" style="width:680px;height:480px;"></div>
     <script src="node_modules/react/umd/react.production.min.js"></script>
@@ -62,7 +139,7 @@
     <script src="js/tool.js"></script>
     <script src="./static/process.min.js"></script>
     <script src="./static/meeting.min.js"></script>
-    
+
 </body>
 
 </html>
