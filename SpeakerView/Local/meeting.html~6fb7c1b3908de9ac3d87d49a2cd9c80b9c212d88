@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Zoom WebSDK</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="node_modules/@zoomus/websdk/dist/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="node_modules/@zoomus/websdk/dist/css/react-select.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<style>
+    #zmmtg-root, #wc-container-left {
+        border: 25px solid #ed0087ff;
+        border-top: 60px solid #ed0087ff;
+        border-bottom: 0px;
+    }
+
+    .title {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 9999;
+        font-family: 'Poppins';
+        font-size: 40px;
+    }
+
+    .emotions {
+        z-index: 9999;
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-size: 2.5rem;
+    }
+
+    .affectobot {
+        z-index: 9999;
+        position: absolute;
+        bottom: 75px;
+        left: 10px;
+    }
+
+    .affectobot-callout {
+        z-index: 9999;
+        position: absolute;
+        bottom: 150px;
+        left: 170px;
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div class="title">:) Affectiva Emotion AI Summit 2020</div>
+    <div class="emotions" id="emotionDisplay"></div>
+    <div class="affectobot">
+        <img src="./affectobot/affectobot.png" style="width: 50%">
+    </div>
+    <div class="affectobot-callout" id="lookAtCamera">
+        <img src="./affectobot/eyecontact.png" style="width: 70%">
+    </div>
+
+    <div class="affectobot-callout" id="lookAtCamera">
+        <img src="./affectobot/eyecontact.png" style="width: 70%">
+    </div>
+    <div class="col-md-8" id="affdex_elements" style="width:680px;height:480px;"></div>
+    <script src="node_modules/react/umd/react.production.min.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="node_modules/redux/dist/redux.min.js"></script>
+    <script src="node_modules/redux-thunk/dist/redux-thunk.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://download.affectiva.com/js/wasm/affdex.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="./static/process.min.js"></script>
+    <script src="./static/meeting.min.js"></script>
+    
+</body>
+
+</html>
