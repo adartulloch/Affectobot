@@ -110,36 +110,6 @@ detector.addEventListener("onImageResultsSuccess", function (
   image,
   timestamp
 ) {
-  if (faces.length > 0) {
-    emojiArray.push(faces[0].emojis.dominantEmoji);
-    // console.log(timestamp)
-    if (timestamp - lastTimestamp >= 2) {
-      lastTimestamp = timestamp;
-      // const datapoints = emojiArray.length;
-      // const summedEmojis = emojiArray.reduce((acc, emoji) => {
-      //   console.log(emoji)
-      //   Object.keys(emoji).map((attribute)=>{
-      //     if(!isNaN(emoji[attribute])){
-      //       acc[attribute] += emoji[attribute]
-      //     }
-      //   })
-      //   return acc
-      // }, {
-      //   disappointed: 0,
-      //   flushed: 0,
-      //   kissing: 0,
-      //   laughing: 0,
-      //   rage: 0,
-      //   relaxed: 0,
-      //   scream: 0,
-      //   smiley: 0,
-      //   smirk: 0,
-      //   stuckOutTongue: 0,
-      //   stuckOutTongueWinkingEye: 0,
-      //   wink: 0,
-      // });
-      // console.log(summedEmojis)
-    }
-  }
+  pushToDb(faces)
   setTimeout(detector.captureNextImage, 150);
 });
